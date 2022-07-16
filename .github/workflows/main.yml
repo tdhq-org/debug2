@@ -1,0 +1,13 @@
+---
+name: test
+
+"on":
+  workflow_dispatch:
+  push:
+
+
+jobs:
+  test:
+    runs-on: self-hosted
+    steps:
+      - run: ansible --version
